@@ -1,0 +1,73 @@
+/* Visual base do projeto (ajuste livremente às cores do seu material) */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d1b2a;
+  color: #e0e1dd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-principal {
+  width: 90%;
+  max-width: 640px;
+  padding: 24px;
+  background: #1b263b;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.tela-inicial {
+  text-align: center;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #415a77;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #778da9;
+}
+
+.caixa-resultado {
+  text-align: center;
+}
+
+/* Parte 3: botões desativados e organização das alternativas */
+.caixa-alternativas button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.caixa-alternativas {
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Parte 5: quebras de linha (\n) no texto do resultado */
+.texto-resultado {
+  white-space: pre-line;
+}
+
+/* Parte 7: tela de créditos e botão de acesso começam escondidos */
+.tela-creditos {
+  display: none;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.creditos-btn {
+  display: none;
+}
+
+.tela-creditos p {
+  margin: 12px 0;
+}
